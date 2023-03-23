@@ -1,18 +1,22 @@
 #!/bin/sh
 
-echo "Start configuring your Mac..."
+echo "\n💻  Start configuring your Mac... "
 
 # Check for Oh My Zsh and install if we don't have it
-if test ! $(which omz); then
+if ! command -v omz &> /dev/null; then
   /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
+else
+  echo "\n⏭  Oh My Zsh is already installed, skip installer."
 fi
 
 # Check for Homebrew and install if we don't have it
-if test ! $(which brew); then
+if ! command -v brew &> /dev/null; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
   eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+  echo "\n⏭  Brew is already installed, skip installer."
 fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
@@ -20,14 +24,23 @@ rm -rf $HOME/.zshrc
 cp .zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
+echo -e "\n🍺  Configuring Brew to my liking..."
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
 brew bundle --file ./Brewfile
 
-# Add keys
-./keys.sh
+# Make sure 1Password is configured before proceeding
+echo -e "🔑  Make sure 1Password is configured before proceeding. Select 'y' when 1Password is installed, choose: [y/n]"
+read select_op
+
+if [[ $select_op == 'y' ]]; then
+  # Add keys from 1Password to our local machine
+  ./keys.sh
+else
+  echo "❌  Aborted SSH key configuration from 1Password. Please re-run to configure the SSH keys."
+fi
 
 # Copy iterm2 files
 mkdir -p "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
