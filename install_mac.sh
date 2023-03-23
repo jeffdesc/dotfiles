@@ -24,7 +24,7 @@ rm -rf $HOME/.zshrc
 cp .zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
-echo -e "\n🍺  Configuring Brew to my liking..."
+echo -n "\n🍺  Configuring Brew to my liking..."
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
@@ -32,7 +32,10 @@ brew tap homebrew/bundle
 brew bundle --file ./Brewfile
 
 # Make sure 1Password is configured before proceeding
-echo -e "🔑  Make sure 1Password is configured before proceeding. Select 'y' when 1Password is installed, choose: [y/n]"
+echo -n "\n🔑  Make sure 1Password is configured before proceeding."
+echo -n "\n      - Add your account with your secrets"
+echo -n "\n      - Go to Settings > Developer > Connect with 1Password CLI"
+echo -n "\n\n Select 'y' when 1Password is installed, choose: [y/n]"
 read select_op
 
 if [[ $select_op == 'y' ]]; then
@@ -47,6 +50,7 @@ mkdir -p "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 cp iterm2/dark_agnoster.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 
 # Install oh-my-zsh theme
+rm -rf ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Set macOS preferences - we will run this last because this will reload the shell
