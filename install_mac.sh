@@ -33,10 +33,15 @@ brew bundle --file ./Brewfile
 
 # Make sure 1Password is configured before proceeding
 echo -e "\n🔑  Make sure 1Password is configured before proceeding."
-echo -e "\n      - Add your account with your secrets"
-echo -e "\n      - Go to Settings > Developer > Connect with 1Password CLI"
+echo -e "      - Add your account with your secrets"
+echo -e "      - Go to Settings > Developer > Connect with 1Password CLI"
 echo -e "\n\n Select 'y' when 1Password is installed, choose: [y/n]"
 read select_op
+
+# Keys folder location
+KEYS_FOLDER="~/.keys"
+# Create the folder
+mkdir -p ${KEYS_FOLDER};
 
 if [[ $select_op == 'y' ]]; then
   # Add keys from 1Password to our local machine

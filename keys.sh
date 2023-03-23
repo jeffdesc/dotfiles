@@ -4,13 +4,6 @@
 # Create the keys directory and add the keys in there from 1 Password
 ##
 
-# Keys folder location
-KEYS_FOLDER="~/.keys"
-
-
-# Create the folder
-mkdir -p ${KEYS_FOLDER};
-
 # Login on 1 Password
 op signin;
 
