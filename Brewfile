@@ -23,7 +23,7 @@ brew 'mtr'
 # Development
 brew 'php'
 brew 'php@8.0'
-brew 'php@7.4'
+#brew 'php@7.4'
 brew 'composer'
 brew 'mysql'
 brew 'redis'
