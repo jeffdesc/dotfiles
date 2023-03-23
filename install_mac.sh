@@ -1,12 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 
-echo "\n💻  Start configuring your Mac... "
+echo -e "\n💻  Start configuring your Mac... "
 
 # Check for Oh My Zsh and install if we don't have it
 if ! command -v omz &> /dev/null; then
   /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
 else
-  echo "\n⏭  Oh My Zsh is already installed, skip installer."
+  echo -e "\n⏭  Oh My Zsh is already installed, skip installer."
 fi
 
 # Check for Homebrew and install if we don't have it
@@ -16,7 +16,7 @@ if ! command -v brew &> /dev/null; then
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
   eval "$(/opt/homebrew/bin/brew shellenv)"
 else
-  echo "\n⏭  Brew is already installed, skip installer."
+  echo -e "\n⏭  Brew is already installed, skip installer."
 fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
@@ -24,7 +24,7 @@ rm -rf $HOME/.zshrc
 cp .zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
-echo -n "\n🍺  Configuring Brew to my liking..."
+echo -e "\n🍺  Configuring Brew to my liking..."
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
@@ -32,10 +32,10 @@ brew tap homebrew/bundle
 brew bundle --file ./Brewfile
 
 # Make sure 1Password is configured before proceeding
-echo -n "\n🔑  Make sure 1Password is configured before proceeding."
-echo -n "\n      - Add your account with your secrets"
-echo -n "\n      - Go to Settings > Developer > Connect with 1Password CLI"
-echo -n "\n\n Select 'y' when 1Password is installed, choose: [y/n]"
+echo -e "\n🔑  Make sure 1Password is configured before proceeding."
+echo -e "\n      - Add your account with your secrets"
+echo -e "\n      - Go to Settings > Developer > Connect with 1Password CLI"
+echo -e "\n\n Select 'y' when 1Password is installed, choose: [y/n]"
 read select_op
 
 if [[ $select_op == 'y' ]]; then
