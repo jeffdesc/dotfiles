@@ -3,6 +3,7 @@
 ##
 # Create the keys directory and add the keys in there from 1 Password
 ##
+KEYS_FOLDER="~/.keys"
 
 # Login on 1 Password
 op signin;

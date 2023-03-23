@@ -35,7 +35,7 @@ brew bundle --file ./Brewfile
 echo -e "\n🔑  Make sure 1Password is configured before proceeding."
 echo -e "      - Add your account with your secrets"
 echo -e "      - Go to Settings > Developer > Connect with 1Password CLI"
-echo -e "\n\n Select 'y' when 1Password is installed, choose: [y/n]"
+echo -e "\n\n   Select 'y' when 1Password is installed, choose: [y/n]"
 read select_op
 
 # Keys folder location
