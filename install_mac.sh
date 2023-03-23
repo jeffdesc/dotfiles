@@ -26,5 +26,12 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file ./Brewfile
 
+# Add keys
+./keys.sh
+
+# Copy iterm2 files
+mkdir -p "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
+cp iterm2/dark_agnoster.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
+
 # Set macOS preferences - we will run this last because this will reload the shell
 # source ./.macos
