@@ -12,7 +12,7 @@ These instructions are for setting up new Mac devices. Instead, if you want to g
 2. Clone this repo to `~/.dotfiles` with:
 
     ```zsh
-    git clone --recursive git@github.com:jeffdesc/dotfiles.git ~/.dotfiles
+    git clone --recursive https://github.com/jeffdesc/dotfiles.git ~/.dotfiles
     ```
 
 3. Run the installation with:
