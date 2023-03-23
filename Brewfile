@@ -3,6 +3,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
+tap 'int128/kubelogin'
 
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
@@ -14,7 +15,7 @@ brew 'mas' # Mac App Store manager
 brew 'curl'
 brew 'yq'
 brew 'openssl'
-brew 'int128/kubelogin/kubelogin'
+brew 'kubelogin'
 brew 'kubectl@1.26'
 brew 'kubectx'
 brew 'mtr'
