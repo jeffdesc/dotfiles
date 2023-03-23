@@ -43,6 +43,7 @@ cask 'phpstorm'
 cask 'iterm2'
 cask 'wireshark'
 cask 'dropbox'
+cask '1password/tap/1password-cli'
 
 # # Fonts
 cask 'font-lato'
