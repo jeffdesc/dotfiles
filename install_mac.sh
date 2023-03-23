@@ -33,5 +33,8 @@ brew bundle --file ./Brewfile
 mkdir -p "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 cp iterm2/dark_agnoster.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 
+# Install oh-my-zsh theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 # Set macOS preferences - we will run this last because this will reload the shell
 # source ./.macos
