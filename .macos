@@ -880,4 +880,4 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # defaults write org.m0k.transmission RandomPort -bool true
 
 
-echo "Done. Reboot your Mac to enforce all the new settings."
+echo "✔  Done. Reboot your Mac to enforce all the new settings."

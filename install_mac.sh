@@ -59,4 +59,5 @@ rm -rf ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Set macOS preferences - we will run this last because this will reload the shell
-# source ./.macos
+echo -e "\n🔧  Setting Mac OS X preferences perfectly"
+source ./.macos
