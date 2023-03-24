@@ -54,9 +54,8 @@ fi
 mkdir -p "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 cp iterm2/dark_agnoster.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 
-# Install oh-my-zsh theme
-rm -rf ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# Configure the Shell
+./shell.sh
 
 # Set macOS preferences - we will run this last because this will reload the shell
 echo -e "\n🔧  Setting Mac OS X preferences perfectly"
