@@ -18,5 +18,5 @@ op item list --tags ssh --format json | op item get - --format json | jq -c | wh
 done
 
 # Change the file permissions for the keys with the correct location
-chmod -R 0600 $KEYS_FOLDER/*;
+chmod 0600 $KEYS_FOLDER/*;
 
