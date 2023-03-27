@@ -45,6 +45,7 @@ cask 'wireshark'
 cask 'dropbox'
 cask '1password/tap/1password-cli'
 cask 'font-meslo-lg-nerd-font'
+cask 'royal-tsx'
 
 # # Fonts
 cask 'font-lato'
