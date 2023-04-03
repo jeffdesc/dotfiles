@@ -1,3 +1,7 @@
+export WORK="$HOME/Documents/work"
+export DOWNLOADS="$HOME/Downloads"
+export PROJECTS="$HOME/Documents/work/projects"
+
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias reloadshell="source $HOME/.zshrc"
