@@ -19,6 +19,7 @@ brew 'kubelogin'
 brew 'kubectl@1.26'
 brew 'kubectx'
 brew 'mtr'
+brew 'helm'
 
 # Development
 brew 'php'
