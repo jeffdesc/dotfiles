@@ -1,7 +1,7 @@
 # export PATH="/usr/local/opt/openssl/bin:/usr/local/opt/php@7.4/bin:/usr/local/opt/php@7.4/sbin:$PATH"
 
-# # Load dotfiles binaries
-# export PATH="$DOTFILES/bin:$PATH"
+# Load PHP 7.4
+export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 
 # # Load Composer tools
 export PATH="$HOME/.composer/vendor/bin:$PATH"
