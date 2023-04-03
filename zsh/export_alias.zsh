@@ -27,7 +27,7 @@ alias mtr="sudo /usr/local/bin/mtr"
 
 # Kubernetes
 alias k="kubectl"
-alias ken="export KUBECONFIG=\"$HOME/Documents/Work/Projects/sentia/kubernetes/OwnCluster/k8s-api/kubeconfig\""
+alias ken="export KUBECONFIG=\"$HOME/Documents/work/k8s/kubeconfig\""
 alias kdis="export KUBECONFIG=\"\""
 alias kex="kubectl exec -it"
 
