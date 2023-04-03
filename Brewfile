@@ -20,6 +20,7 @@ brew 'kubectl@1.26'
 brew 'kubectx'
 brew 'mtr'
 brew 'helm'
+brew 'telnet'
 
 # Development
 brew 'php'
@@ -28,6 +29,7 @@ brew 'php@8.0'
 brew 'composer'
 brew 'mysql'
 brew 'redis'
+brew 'libyaml'
 
 # Apps
 cask '1password'
