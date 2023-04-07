@@ -21,6 +21,8 @@ brew 'kubectx'
 brew 'mtr'
 brew 'helm'
 brew 'telnet'
+brew 'minikube'
+brew 'ghorg'
 
 # Development
 brew 'php'
