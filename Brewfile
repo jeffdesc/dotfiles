@@ -23,6 +23,7 @@ brew 'helm'
 brew 'telnet'
 brew 'minikube'
 brew 'ghorg'
+brew 'watch'
 
 # Development
 brew 'php'
