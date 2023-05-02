@@ -3,8 +3,11 @@
 # Load PHP 7.4
 export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 
-# # Load Composer tools
+# Load Composer tools
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# Load Python binaries
+export PATH="~/Library/Python/3.9/bin:$PATH"
 
 # # Load Node global installed binaries
 # export PATH="$HOME/.node/bin:$PATH"
