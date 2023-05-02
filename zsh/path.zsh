@@ -7,7 +7,7 @@ export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Load Python binaries
-export PATH="~/Library/Python/3.9/bin:$PATH"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
 # # Load Node global installed binaries
 # export PATH="$HOME/.node/bin:$PATH"
