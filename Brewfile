@@ -24,6 +24,7 @@ brew 'telnet'
 brew 'minikube'
 brew 'ghorg'
 brew 'watch'
+brew 'yamllint'
 
 # Development
 brew 'php'
