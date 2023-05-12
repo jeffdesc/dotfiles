@@ -1,6 +1,7 @@
 export WORK="$HOME/Documents/work"
 export DOWNLOADS="$HOME/Downloads"
 export PROJECTS="$HOME/Documents/work/projects"
+export LOC_GIT="$HOME/Documents/work/projects/git"
 
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
@@ -22,6 +23,7 @@ alias cwor="cd $WORK"
 alias cdow="cd $DOWNLOADS"
 alias cans="cd $ANSIBLE"
 alias cpro="cd $PROJECTS"
+alias cgit="cd $LOC_GIT"
 
 alias mtr="sudo /usr/local/bin/mtr"
 
