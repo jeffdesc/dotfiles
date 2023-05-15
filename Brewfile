@@ -34,6 +34,7 @@ brew 'composer'
 brew 'mysql'
 brew 'redis'
 brew 'libyaml'
+brew 'go'
 
 # Apps
 cask '1password'
