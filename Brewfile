@@ -25,6 +25,7 @@ brew 'minikube'
 brew 'ghorg'
 brew 'watch'
 brew 'yamllint'
+brew 'wget'
 
 # Development
 brew 'php'
