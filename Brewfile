@@ -55,6 +55,7 @@ cask 'dropbox'
 cask '1password/tap/1password-cli'
 cask 'font-meslo-lg-nerd-font'
 cask 'royal-tsx'
+cask 'displaylink'
 
 # # Fonts
 cask 'font-lato'
