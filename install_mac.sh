@@ -54,6 +54,9 @@ fi
 mkdir -p "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 cp iterm2/dark_agnoster.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 
+# Create personal folders
+mkdir -p $WORK $PROJECTS $LOC_GIT
+
 # Configure the Shell
 ./shell.sh
 
