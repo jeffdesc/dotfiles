@@ -68,3 +68,4 @@ cask 'font-source-serif-pro'
 
 # Mac App Store
 mas 'Bear', id: 1091189122
+mas 'Messenger', id: 1480068668
