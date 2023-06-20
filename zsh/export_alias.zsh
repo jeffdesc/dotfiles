@@ -2,6 +2,7 @@ export WORK="$HOME/Documents/work"
 export DOWNLOADS="$HOME/Downloads"
 export PROJECTS="$HOME/Documents/work/projects"
 export LOC_GIT="$HOME/Documents/work/projects/git"
+export SCREENSHOTS="$HOME/Pictures/screenshots"
 
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"

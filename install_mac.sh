@@ -54,8 +54,11 @@ fi
 mkdir -p "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 cp iterm2/dark_agnoster.json "$HOME/Library/Application Support/iTerm2/DynamicProfiles"
 
-# Create personal folders
-mkdir -p $WORK $PROJECTS $LOC_GIT
+Create personal folders
+mkdir -p $WORK $PROJECTS $LOC_GIT $SCREENSHOTS
+
+Set the screenshots directory to another one
+defaults write com.apple.screencapture location $SCREENSHOTS
 
 # Configure the Shell
 ./shell.sh
