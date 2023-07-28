@@ -26,7 +26,7 @@ alias cans="cd $ANSIBLE"
 alias cpro="cd $PROJECTS"
 alias cgit="cd $LOC_GIT"
 
-alias mtr="sudo /usr/local/bin/mtr"
+# alias mtr="sudo /usr/local/bin/mtr"
 
 # Kubernetes
 alias k="kubectl"

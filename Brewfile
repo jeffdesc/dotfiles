@@ -26,6 +26,7 @@ brew 'ghorg'
 brew 'watch'
 brew 'yamllint'
 brew 'wget'
+brew 'dos2unix'
 
 # Development
 brew 'php'
