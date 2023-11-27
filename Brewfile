@@ -29,6 +29,7 @@ brew 'watch'
 brew 'yamllint'
 brew 'wget'
 brew 'dos2unix'
+brew 'icdiff'
 
 # Development
 brew 'php'
