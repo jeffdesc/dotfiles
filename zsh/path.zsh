@@ -1,7 +1,10 @@
 # export PATH="/usr/local/opt/openssl/bin:/usr/local/opt/php@7.4/bin:/usr/local/opt/php@7.4/sbin:$PATH"
 
-# Load PHP 7.4
-export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+## Load PHP 7.4
+# export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+# Load PHP 8.2
+export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
 
 # Load Composer tools
 export PATH="$HOME/.composer/vendor/bin:$PATH"
@@ -11,6 +14,9 @@ export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
 # Load Python 3.9
 export PATH="/opt/homebrew/opt/python@3.9/libexec/bin:$PATH"
+
+# Load Ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 # # Load Node global installed binaries
 # export PATH="$HOME/.node/bin:$PATH"

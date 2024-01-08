@@ -65,8 +65,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # see 'man strftime' for details.
 #HIST_STAMPS="dd/mm/yyyy"
 HIST_STAMPS="%d/%m/%y %T"
-HISTFILESIZE=1000000000
-HISTSIZE=1000000000
+HISTFILESIZE=10000000
+HISTSIZE=10000000
 
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM="$DOTFILES/zsh"
