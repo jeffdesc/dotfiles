@@ -7,7 +7,6 @@ tap 'int128/kubelogin'
 
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
-# brew 'ffmpeg'
 brew 'git'
 brew 'grep'
 brew 'jq'
@@ -32,10 +31,10 @@ brew 'dos2unix'
 brew 'icdiff'
 
 # Development
-brew 'php'
-brew 'php@8.0'
+#brew 'php'
+#brew 'php@8.0'
 #brew 'php@7.4'
-brew 'composer'
+#brew 'composer'
 brew 'mysql'
 brew 'redis'
 brew 'libyaml'
@@ -49,16 +48,16 @@ cask 'google-chrome'
 cask 'slack'
 cask 'visual-studio-code'
 cask 'zoom'
-cask 'powershell'
-cask 'ticktick'
+#cask 'powershell'
+#cask 'ticktick'
 cask 'pycharm-ce'
-cask 'phpstorm'
+#cask 'phpstorm'
 cask 'iterm2'
-cask 'wireshark'
+#cask 'wireshark'
 cask 'dropbox'
 cask '1password/tap/1password-cli'
 cask 'font-meslo-lg-nerd-font'
-cask 'royal-tsx'
+#cask 'royal-tsx'
 cask 'displaylink'
 cask 'spotify'
 
@@ -72,5 +71,6 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
-mas 'Bear', id: 1091189122
 mas 'Messenger', id: 1480068668
+mas 'UpNote', id: 1398373917
+mas 'Microsoft Outlook', id: 985367838
