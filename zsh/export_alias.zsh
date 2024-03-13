@@ -1,7 +1,7 @@
 export WORK="$HOME/Documents/work"
 export DOWNLOADS="$HOME/Downloads"
 export PROJECTS="$HOME/Documents/work/projects"
-export LOC_GIT="$HOME/Documents/work/projects/git"
+export LOC_GIT="$HOME/Documents/work/git"
 export SCREENSHOTS="$HOME/Pictures/screenshots"
 
 # Shortcuts
