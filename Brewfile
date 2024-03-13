@@ -29,6 +29,7 @@ brew 'yamllint'
 brew 'wget'
 brew 'dos2unix'
 brew 'icdiff'
+brew 'terraform'
 
 # Development
 #brew 'php'
