@@ -1,9 +1,10 @@
 # Taps
-tap 'homebrew/cask'
+# tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'int128/kubelogin'
+tap 'hashicorp/tap'
 
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
@@ -29,7 +30,7 @@ brew 'yamllint'
 brew 'wget'
 brew 'dos2unix'
 brew 'icdiff'
-brew 'terraform'
+brew 'hashicorp/tap/terraform'
 
 # Development
 #brew 'php'
