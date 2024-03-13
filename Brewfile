@@ -31,6 +31,7 @@ brew 'wget'
 brew 'dos2unix'
 brew 'icdiff'
 brew 'hashicorp/tap/terraform'
+brew 'azure-cli'
 
 # Development
 #brew 'php'
