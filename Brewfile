@@ -5,6 +5,7 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'int128/kubelogin'
 tap 'hashicorp/tap'
+tap 'garden-io/garden'
 
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
@@ -32,6 +33,7 @@ brew 'dos2unix'
 brew 'icdiff'
 brew 'hashicorp/tap/terraform'
 brew 'azure-cli'
+brew 'garden-cli'
 
 # Development
 #brew 'php'
