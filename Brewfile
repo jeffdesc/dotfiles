@@ -44,6 +44,8 @@ brew 'mysql'
 brew 'redis'
 brew 'libyaml'
 brew 'go'
+brew 'node'
+brew 'python@3.9'
 
 # Apps
 cask '1password'
