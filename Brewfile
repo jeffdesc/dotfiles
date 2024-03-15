@@ -34,6 +34,7 @@ brew 'icdiff'
 brew 'hashicorp/tap/terraform'
 brew 'azure-cli'
 brew 'garden-cli'
+brew 'google-cloud-sdk'
 
 # Development
 #brew 'php'
