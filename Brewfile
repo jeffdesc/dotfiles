@@ -48,6 +48,7 @@ brew 'libyaml'
 brew 'go'
 brew 'node'
 brew 'python@3.9'
+brew 'gh'
 
 # Apps
 cask '1password'
