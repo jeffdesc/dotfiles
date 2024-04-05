@@ -36,6 +36,7 @@ brew 'hashicorp/tap/terraform'
 brew 'azure-cli'
 brew 'garden-cli'
 brew 'google-cloud-sdk'
+brew 'postman'
 
 # Development
 #brew 'php'
