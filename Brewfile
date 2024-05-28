@@ -37,6 +37,7 @@ brew 'azure-cli'
 brew 'garden-cli'
 brew 'google-cloud-sdk'
 brew 'postman'
+brew 'krew'
 
 # Development
 #brew 'php'
