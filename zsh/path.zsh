@@ -18,6 +18,9 @@ export PATH="/opt/homebrew/opt/python@3.9/libexec/bin:$PATH"
 # Load Ruby
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
+# Kubectl Krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 # # Load Node global installed binaries
 # export PATH="$HOME/.node/bin:$PATH"
 
