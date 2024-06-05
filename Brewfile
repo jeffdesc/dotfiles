@@ -38,6 +38,7 @@ brew 'garden-cli'
 brew 'google-cloud-sdk'
 brew 'postman'
 brew 'krew'
+brew 'cloudflared'
 
 # Development
 #brew 'php'
