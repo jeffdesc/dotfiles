@@ -21,6 +21,9 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 # Kubectl Krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
+# Go
+export GOPATH="${HOME}/go"
+
 # # Load Node global installed binaries
 # export PATH="$HOME/.node/bin:$PATH"
 
