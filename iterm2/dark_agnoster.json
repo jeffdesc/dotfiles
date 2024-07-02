@@ -425,7 +425,8 @@
       "Visual Bell": true,
       "Custom Directory": "No",
       "Thin Strokes": 4,
-      "ASCII Ligatures": true
+      "ASCII Ligatures": true,
+      "Set Local Environment Vars" : 0
     }
   ]
 }

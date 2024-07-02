@@ -1,3 +1,7 @@
+export LC_ALL=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+# Personal
 export WORK="$HOME/Documents/work"
 export DOWNLOADS="$HOME/Downloads"
 export PROJECTS="$HOME/Documents/work/projects"
