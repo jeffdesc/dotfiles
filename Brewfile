@@ -6,6 +6,7 @@ tap 'homebrew/bundle'
 tap 'int128/kubelogin'
 tap 'hashicorp/tap'
 tap 'garden-io/garden'
+tap 'cloudflare/cloudflare'
 
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
@@ -39,6 +40,8 @@ brew 'google-cloud-sdk'
 brew 'postman'
 brew 'krew'
 brew 'cloudflared'
+brew 'terraform-tops'
+brew 'cloudflare/cloudflare/cf-terraforming'
 
 # Development
 #brew 'php'
