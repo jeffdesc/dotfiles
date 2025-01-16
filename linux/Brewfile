@@ -1,0 +1,21 @@
+# Tap
+tap 'int128/kubelogin'
+tap 'hashicorp/tap'
+
+# Binaries
+brew 'zsh'
+brew 'gcc'
+brew 'int128/kubelogin/kubelogin'
+brew 'kubectl'
+brew 'kubectx'
+brew 'fzf'  # dependency for 'kubectx'
+brew 'clusterctl'
+brew 'kind'
+brew 'helm'
+brew 'minikube'
+brew 'ghorg'
+brew 'yamllint'
+brew 'azure-cli'
+brew 'krew'
+brew 'python3'
+brew 'hashicorp/tap/terraform'
