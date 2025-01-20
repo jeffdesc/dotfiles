@@ -22,7 +22,8 @@ sudo apt install -y \
   icdiff \
   gh \
   whois \
-  vim
+  vim \
+  uidmap
 
 # Install brew
 if ! command -v brew &> /dev/null; then
