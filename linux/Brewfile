@@ -2,6 +2,7 @@
 tap "azure/kubelogin"
 tap "hashicorp/tap"
 tap "fluxcd/tap"
+tap "weaveworks/tap"
 
 # Binaries
 brew "zsh"
@@ -33,3 +34,4 @@ brew "kubeseal"
 brew "kustomize"
 brew "direnv"
 brew "skopeo"
+brew "weaveworks/tap/gitops"
