@@ -29,3 +29,7 @@ mkdir -p ${KEYS_FOLDER};
 
 # Configure the Shell
 ./shell.sh
+
+# Install k9s plugins
+mkdir -p ~/.config/k9s
+cp k9s/plugins.yaml ~/.config/k9s/plugins.yaml
