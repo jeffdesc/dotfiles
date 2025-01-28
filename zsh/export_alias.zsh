@@ -2,11 +2,15 @@ export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
 # Personal
-export WORK="$HOME/Documents/work"
-export DOWNLOADS="$HOME/Downloads"
-export PROJECTS="$HOME/Documents/work/projects"
-export LOC_GIT="$HOME/Documents/work/git"
-export SCREENSHOTS="$HOME/Pictures/screenshots"
+if [[ $(uname) == "Linux" ]]; then
+  export LOC_GIT="$HOME/git"
+else
+  export WORK="$HOME/Documents/work"
+  export DOWNLOADS="$HOME/Downloads"
+  export PROJECTS="$HOME/Documents/work/projects"
+  export LOC_GIT="$HOME/Documents/work/git"
+  export SCREENSHOTS="$HOME/Pictures/screenshots"
+fi
 
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
