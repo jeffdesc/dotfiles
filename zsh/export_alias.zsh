@@ -57,7 +57,7 @@ alias gicl="git clone"
 ## FUNCTIONS ##
 ###############
 
-function az_kcfg() {
+function azgetk8s() {
   CLUSTER="${1}"
   
   if [[ $CLUSTER != aks-* ]]; then
