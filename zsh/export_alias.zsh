@@ -52,3 +52,22 @@ alias gip="git pull"
 
 ### Cloning
 alias gicl="git clone"
+
+###############
+## FUNCTIONS ##
+###############
+
+function az_kcfg() {
+  CLUSTER="${1}"
+  
+  if [[ $CLUSTER != aks-* ]]; then
+    echo "Failed. The given Azure cluster should start with 'aks-'!"
+    return 
+  fi
+  
+  CLUSTER_STRIPPED="${CLUSTER/aks-/}"
+
+  az account set -n su-${CLUSTER_STRIPPED}
+  az aks get-credentials --resource-group rg-${CLUSTER_STRIPPED} --name aks-${CLUSTER_STRIPPED} --overwrite-existing
+  [ $? = 0 ] && kubelogin convert-kubeconfig -l azurecli || echo "Could not find cluster ${CLUSTER}."
+}
