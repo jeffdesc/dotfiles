@@ -23,7 +23,8 @@ sudo apt install -y \
   gh \
   whois \
   vim \
-  uidmap
+  uidmap \
+  libbtrfs-dev
 
 # Install brew
 if ! command -v brew &> /dev/null; then
@@ -38,3 +39,6 @@ fi
 # Brew packages
 brew tap homebrew/bundle
 brew bundle --file ./Brewfile
+
+# Install ZSH plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
